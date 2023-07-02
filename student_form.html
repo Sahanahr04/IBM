@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>HTML STUDENT FORM</title>
+<style>
+    body
+    {
+        background-color:lightblue;
+    }
+    </style>
+</head>
+<body>
+    <form ><!--method and action attribute is not specified-->
+        
+    <center>
+<h1>HTML STUDENT FORM</h1>
+
+Name 
+<input type="text" name="sname" value="sahana"><br><br> <!-- value in input tag provides initial value ,in button name of button to display -->
+Address
+<textarea rows="3"  cols="15">
+</textarea><br><br>
+Grade<br>
+<input type="radio" value="A" name="grade">A<br>
+<input type="radio" value="B" name="grade">B<br>
+<input type="radio" value="C" name="grade">C<br><br>
+Language<br>
+<input type="checkbox" value="kannada" name="lan">kannada<br>
+<input type="checkbox" value="english" name="lan">english<br><br>
+<input type="submit" value="submit" name="submit" onclick="popup()">
+<script>
+    function popup() 
+{
+  alert('STUDENT FORM SUCCESSFULLY SUBMITTED');
+}
+</script>
+
+</center>
+</form>
+</body>
+</html>
+
+ 
