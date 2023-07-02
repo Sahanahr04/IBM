@@ -1,0 +1,65 @@
+<html>
+<head>
+    
+    <title>SURVEY FORM</title>
+</head>
+<h1>SURVEY FORM</h1>
+<body>
+    <style>
+        body
+        {
+            background-color:pink;
+        }
+
+    .blocks input [type="radio"],
+    .block input [type="checkbox"]
+        {
+            vertical-align:middle;
+        }
+    </style>
+    <form>
+       
+
+    Name
+    <input type="text" name="sname" placeholder="Enter your name"><!--placeholder gives hint for input field  --><br><br>
+    Email
+    <input type="email" name="semail" placeholder="Enter your mail id"><br><br>
+    Age
+    <input type="text" name="sage" placeholder="Enter your age"><br><br>
+    Which option best describes you<br><br> 
+    <select name="you"><!--creation of dropdown -->
+    <option value="student">Student</option>
+    <option value="employee">Employee</option>
+ </select><br><br>
+ Would you like to suggest geeks for geeks for your friend <br><br>
+
+
+ <div class="blocks">
+ <input type="radio" name="choice" value="yes">yes<br>
+ <input type="radio" name="choice" value="no">no<br>
+ <input type="radio" name="choice" value="maybe">maybe<br></br>
+</div>
+
+<div class="block">
+ Languages and frameworks known <br><br>
+ <input type="checkbox" name="lan" value="C">C<br>
+ <input type="checkbox" name="lan" value="JAVA">JAVA<br>
+ <input type="checkbox" name="lan" value="PYTHON">PYTHON<br><br>
+</div>
+
+ ANY SUGGESTIONS<br><br>
+ <input type="text" name="suggest" placeholder="any suggestions"><br><br>
+ <input type="submit" value="submit" onclick="done()">
+<script>
+      function done()
+       {
+        alert('FORM SUBMITTED')
+       }
+    
+    </script>
+
+
+    </form>
+
+</body>
+</html>
