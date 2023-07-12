@@ -5,8 +5,9 @@ public class BasketBallCoach implements Coach{
 	private FortuneService fortuneService;
 	
 	
-	public BasketBallCoach(FortuneService fortuneService) {
-		
+	
+
+	public void setFortuneService(FortuneService fortuneService) {
 		this.fortuneService = fortuneService;
 	}
 

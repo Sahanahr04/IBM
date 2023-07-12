@@ -3,7 +3,8 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 <bean name="theCoach" class="org.example.spring.model.CricketCoach">
-<constructor-arg name="fortuneService" ref="myFortuneService"></constructor-arg></bean>
+<property name="fortuneService" ref="myFortuneService"></property>
+</bean>
 <bean name="myFortuneService" class="org.example.spring.model.HappyFortuneService">
 </bean>
 </beans>

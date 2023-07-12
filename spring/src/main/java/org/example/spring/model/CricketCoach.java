@@ -5,10 +5,12 @@ package org.example.spring.model;
 		
 		private FortuneService fortuneService;
 		
-		public CricketCoach(FortuneService fortuneService) {
-			
+		
+		
+		public void setFortuneService(FortuneService fortuneService) {
 			this.fortuneService = fortuneService;
 		}
+
 		@Override
 		public String getDailyWorkOut() {
 			// TODO Auto-generated method stub
