@@ -14,8 +14,9 @@ public class App
     		 ApplicationContext context=new ClassPathXmlApplicationContext("applicationContext.xml");
     		Coach myCoach=context.getBean("theCoach",Coach.class);
     		System.out.println(myCoach.getDailyWorkOut());
-    		
-    				}
+    		System.out.println(myCoach.getDailyFortune());    		
+    	}
+    	
     	catch(Exception e)
     	{
     		e.printStackTrace();
